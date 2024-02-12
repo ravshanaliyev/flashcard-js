@@ -22,3 +22,16 @@ closeBtn.addEventListener("click", (hideQuestion) => {
     submitQuestion();
   }
 });
+cardBtn.addEventListener("click", () => {
+  editBool = false;
+  tempQuestion = question.value.trim();
+  tempAnswer = answer.value.trim();
+  if (!tempQuestion || !tempAnswer) {
+    errorMessage.classList.remove("hide");
+  } else {
+    container.classList.remove("hide");
+    errorMessage.classList.add("hide");
+    question.value = "";
+    answer.value = "";
+  }
+});
