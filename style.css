@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f7f9fd;
+}
+
+.container {
+    width: 90vw;
+    max-width: 62.5em;
+    border: 1px solid black;
+    position: relative;
+    margin: auto;
+}
+
+.add-flashcard-con {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.2em 1em;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.add-flashcard-con button {
+    font-size: 1em;
+    background-color: #587ef4;
+    padding: 0.8em 1.2em;
+    color: #fff;
+    font-weight: 500;
+    border-radius: .4rem;
+}
+
+.card-con {
+    border: 1px solid black;
+    margin-top: 1em;
+}
+
+.question-container {
+    width: 90vw;
+    max-width: 32em;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em 2em;
+    border-radius: .6rem;
+    box-shadow: 0 1em 2em rgba(28, 0, 80, .1);
+}
+
+.question-container h2 {
+    font-size: 2.2em;
+    color: #363d55;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.error-con {
+    align-self: center;
+}
+
+#error {
+    color: #ff5353;
+    font-weight: 400;
+}
+
+.fa-xmark::before {
+    font-size: 1.4em;
+    background-color: #587ef4;
+    color: #fff;
+    height: 1.8em;
+    width: 1.8em;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-self: flex-end;
+}
+
+
+label {
+    color: #363d55;
+    font-weight: 600;
+    margin-bottom: .3em;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.7em 0.5em;
+    border: 1px solid #d0d0d0;
+    outline: none;
+    color: #414a67;
+    border-radius: .3em;
+    resize: none;
+}
+
+textarea:not(:last-child) {
+    margin-bottom: 1.2em;
+}
+
+textarea:focus {
+    border-color: #363d55;
+}
+
+#save-btn {
+    font-size: 1em;
+    background-color: #587ef4;
+    color: #fff;
+    padding: 0.6em 0;
+    border-radius: .3em;
+    font-weight: 600;
+}
+
+.hide {
+    display: none;
+}
